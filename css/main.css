@@ -51,7 +51,7 @@ nav li a{
     text-decoration: none;
 }
 
-nav li: :hover{
+nav li:hover{
     background-color:blue;
 }
 
