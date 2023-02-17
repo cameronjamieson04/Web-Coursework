@@ -39,3 +39,22 @@ footer{
     background-color: white;
     border-radius: 10px;
 }
+nav li{
+    border: 2px, solid, grey;
+    background-color: white;
+    list-style-type: none;
+}
+
+nav li a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li: :hover{
+    background-color:blue;
+}
+
+.active{
+    background-color: blueviolet;
+}
