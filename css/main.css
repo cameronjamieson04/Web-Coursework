@@ -6,6 +6,7 @@ header{
     background-color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 10px;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -52,9 +53,20 @@ nav li a{
 }
 
 nav li:hover{
-    background-color:blue;
+    background-color:rgb(0, 140, 255);
 }
 
 .active{
     background-color: blueviolet;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+#mainTitle{
+    display: inline;
 }
