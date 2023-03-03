@@ -31,33 +31,56 @@ main{
     border-radius: 10px;
 }
 
+div{
+    padding: 10px;
+}
+
 aside{
     background-color: white;
     border-radius: 10px;
+    padding: 10px;
 }
 
 footer{
     background-color: white;
     border-radius: 10px;
+    padding: 10px;
 }
+
+nav{
+    padding: 10px;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
 nav li{
     border: 2px, solid, grey;
     background-color: white;
     list-style-type: none;
+    float: left;
+    width: 15%;
+    padding: 16px;
 }
 
 nav li a{
-    color: black;
-    text-align: center;
+    color: white;
     text-decoration: none;
 }
 
 nav li:hover{
-    background-color:rgb(0, 140, 255);
+    background-color:black;
 }
 
 .active{
     background-color: blueviolet;
+}
+
+table{
+    padding: 10px;
 }
 
 #logo{
