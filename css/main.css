@@ -3,7 +3,7 @@ body{
   }
 
 header{
-    background-color: rgb(102, 97, 97);
+    background-color: rgb(121, 116, 112);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
@@ -27,7 +27,7 @@ p{
 }
 
 main{
-    background-color: rgb(102, 97, 97);
+    background-color: rgb(121, 116, 112);
     border-radius: 10px;
 }
 
@@ -36,13 +36,13 @@ div{
 }
 
 aside{
-    background-color: rgb(102, 97, 97);
+    background-color: rgb(121, 116, 112);
     border-radius: 10px;
     padding: 10px;
 }
 
 footer{
-    background-color: rgb(102, 97, 97);
+    background-color: rgb(121, 116, 112);
     border-radius: 10px;
     padding: 10px;
 }
@@ -59,7 +59,7 @@ nav ul{
 
 nav li{
     border: 2px, solid, rgb(49, 73, 44);
-    background-color: rgb(102, 97, 97);
+    background-color: rgb(121, 116, 112);
     list-style-type: none;
     float: left;
     width: 15%;
@@ -72,7 +72,7 @@ nav li a{
 }
 
 nav li:hover{
-    background-color:rgb(121, 116, 112);
+    background-color:rgb(151, 143, 137);
 }
 
 .active{
