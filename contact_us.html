@@ -1,27 +1,56 @@
 <html>
     <head>
-        <title> Placeholder </title>
+        <title> HoI4 Society </title>
         <link rel='stylesheet' href='css/main.css'>
     </head>
 
     <body>
-        <header> <h1>Placeholder</h1> </header>
+        <header> <img id="logo" src="images/logo.jpeg" alt="Society logo"/> <h1 id="mainTitle">The HoI4 Society</h1> </header>
 
-        <nav> 
+        <nav>
             <ul>
                 <li class=”active”><a href='index.html'> Home</a></li>
                 <li class=”active”><a href='img_gallery.html'> Gallery</a></li>
                 <li class=”active”><a href='current_member.html'> Current Members</a></li>  
                 <li class=”active”><a href='event_calendar.html'> Events</a></li> 
                 <li class=”active”><a href='contact_us.html'> Contact Us</a></li>
-            </ul>
+            </ul> 
         </nav>
 
-        <main> </main>
+        <main>
+        
+            <form>
+                <fieldset>
+                <legend>Contact Us using the form below and show us your encirclements.</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" value=""/> <br/>
+                <label for="email">Email:</label>
+                <input type="text" name="email" value=""/> <br/>
+                <label for="memberStatus">Are you a member</label>
+                <label for="Yes">Yes</label>
+                <input type="radio" name="memberStatus" id="Yes" value="Yes">
+                <label for="No">No</label>
+                <input type="radio" name="memberStatus" id="no" value="No"> <br/>
+                <label for="comments">Any Comments:</label>
+                <input type="text" name="comments" value=""/> <br/>
+                <label for="files">Show us your encirclement:</label>
+                <input type="file" name="files"/> <br/>
+                <button type="button" id="button" onclick="myFunction()">Submit</button>
+
+                </fieldset>
+            </form>
+        
+        </main>
 
         <aside> </aside>
 
         <footer> </footer>
         
+        <script>
+            function myFunction() { 
+                document.getElementById("button").innerHTML="Form has been sent successfully!"
+            }
+        </script>
+
     </body>
 </html>
