@@ -5,7 +5,16 @@
     </head>
 
     <body>
-        <header> <img id="logo" src="images/logo.jpeg" alt="Society logo"/> <h1 id="mainTitle">The HoI4 Society</h1> </header>
+
+        <header> 
+            <img id="logo" src="images/logo.jpeg" alt="Society logo"/> 
+            <h1 id="mainTitle">The HoI4 Society</h1> 
+            <form id="logInForm">
+                <input type="text" id="emailLogin" placeholder="Email" name="emailLogin" value=""/>
+                <input type="text" id="passLogin" placeholder="Password" name="pass" value=""/>
+                <button type="button" id="logButton" onclick="loginButton()">Log In</button>
+            </form>
+        </header>
 
         <nav>
             <ul>
@@ -29,6 +38,29 @@
         <aside> <h3>Latest Tweets</h3> </aside>
 
         <footer> <p> Copyright Cameron Jamieson</p> </footer>
+
+        <script>
+            var counter = 2;
+
+            function loginButton() { 
+                if(counter % 2 == 0){
+                    alert('You have been logged in!');
+                    document.getElementById("logButton").innerHTML="Log Out";
+                    document.getElementById("emailLogin").style="display:none;";
+                    document.getElementById("passLogin").style="display:none;";
+                }
+
+                else {
+                    alert('You have been logged out!');
+                    document.getElementById("logButton").innerHTML="Log In";
+                    document.getElementById("emailLogin").style="display:inline;";
+                    document.getElementById("passLogin").style="display:inline;";
+                }
+
+                counter += 1;
+
+            }
+        </script>
 
     </body>
 </html>

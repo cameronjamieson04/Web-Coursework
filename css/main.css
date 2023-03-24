@@ -9,8 +9,12 @@ header{
     padding: 10px;
 }
 
-h1,h2,h3,h4,h5,h6,p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+h1{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+h2,h3,h4,h5,h6,p{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     color: black;
 }
 
@@ -62,11 +66,12 @@ nav li{
     background-color: rgb(121, 116, 112);
     list-style-type: none;
     float: left;
-    width: 15%;
+    width: 10%;
     padding: 16px;
 }
 
 nav li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     color: black;
     text-decoration: none;
 }
@@ -92,4 +97,21 @@ table{
 
 #mainTitle{
     display: inline;
+}
+
+#logInForm{
+    display: inline; 
+    float: right;
+}
+
+.gallery-img{
+    width:100%;
+}
+
+#img-gallery{
+    padding-top: 10px;
+}
+
+#img-gallery .row {
+    margin-bottom: 10px;
 }
