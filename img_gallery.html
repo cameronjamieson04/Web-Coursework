@@ -23,43 +23,56 @@
             <div id="img-gallery" class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <img src="images/gallery1.jpg" class="gallery-img" alt=""/>
+                        <img src="images/gallery1.jpg" class="gallery-img" alt="epic encirclement"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/gallery2.jpg" class="gallery-img" alt=""/>
+                        <img src="images/gallery2.jpg" class="gallery-img" alt="epic encirclement"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/gallery23.jpg" class="gallery-img" alt=""/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <img src="images/gallery4.png" class="gallery-img" alt=""/>
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/gallery5.jpg" class="gallery-img" alt=""/>
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/gallery6.jpg" class="gallery-img" alt=""/>
+                        <img src="images/gallery23.jpg" class="gallery-img" alt="epic encirclement"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <img src="images/gallery7.jpg" class="gallery-img" alt=""/>
+                        <img src="images/gallery4.png" class="gallery-img" alt="epic encirclement"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/gallery8.jpg" class="gallery-img" alt=""/>
+                        <img src="images/gallery5.jpg" class="gallery-img" alt="epic encirclement"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/gallery9.jpg" class="gallery-img" alt=""/>
+                        <img src="images/gallery6.jpg" class="gallery-img" alt="epic encirclement"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img id="img1" src="images/gallery7.jpg"  class="gallery-img" alt="epic encirclement"/>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/gallery8.jpg" class="gallery-img" alt="epic encirclement"/>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/gallery9.jpg" class="gallery-img" alt="epic encirclement"/>
                     </div>
                 </div>
             </div>
         </main>
 
+        <script>
+            document.getElementById("img1").addEventListener("mouseover", highlight);
+            document.getElementById("img1").addEventListener("mouseout", delight);
+            function highlight() {
+                document.getElementById("img1").style="border:solid black 10px;"
+            }
+            function delight() {
+                document.getElementById("img1").style="border: none;"
+            }
+        </script>
+
         <aside> </aside>
 
-        <footer> </footer>
+        <footer> <p> Copyright Cameron Jamieson 2023</p> </footer>
         
+        
+
     </body>
 </html>
