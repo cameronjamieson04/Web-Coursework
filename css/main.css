@@ -95,6 +95,13 @@ table{
     margin-right: 10px;
 }
 
+#channelLogo{
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-right: 10px;
+}
+
 #mainTitle{
     display: inline;
 }
