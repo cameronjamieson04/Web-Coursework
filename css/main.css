@@ -33,6 +33,8 @@ p{
 main{
     background-color: rgb(121, 116, 112);
     border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 div{
@@ -42,13 +44,30 @@ div{
 aside{
     background-color: rgb(121, 116, 112);
     border-radius: 10px;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
 footer{
     background-color: rgb(121, 116, 112);
     border-radius: 10px;
+    margin-bottom: 10px;
     padding: 10px;
+}
+
+#left-col{
+    float:left;
+    display: inline;
+    width:70%;
+}
+
+#right col{
+    float: right;
+    display: inline;
+}
+
+#tweet{
+    float: right;
 }
 
 nav{
@@ -62,7 +81,9 @@ nav ul{
 }
 
 nav li{
-    border: 2px, solid, rgb(49, 73, 44);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(49, 73, 44);
     background-color: rgb(121, 116, 112);
     list-style-type: none;
     float: left;
@@ -85,7 +106,35 @@ nav li:hover{
 }
 
 table{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
     padding: 10px;
+}
+
+table td, table th{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 4px;
+    font-size: 10pt;
+    width: 10%;
+}
+
+table tr:nth-child(even){
+    background-color: rgb(134, 132, 130);
+}
+
+table tr:nth-child(odd){
+    background-color: rgb(110, 109, 108);
+}
+
+table tr:hover{
+    background-color: rgb(85, 122, 77);
+}
+
+table th{
+    background-color: rgb(110, 109, 108);
+    color:white; 
 }
 
 #logo{
@@ -95,11 +144,23 @@ table{
     margin-right: 10px;
 }
 
+#templateImgs{
+    width: 600px;
+    height: 300px;
+    display:inline;    
+}
+
 #channelLogo{
     height: 50px;
     width: 50px;
-    float: right;
-    margin-right: 10px;
+    float: left;
+    margin-left: 10px;
+}
+
+#videos{
+    width: 420px;
+    height: 236px;
+    display:inline;
 }
 
 #mainTitle{

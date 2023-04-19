@@ -1,4 +1,17 @@
 <html>
+
+<!--
+Threat Model
+Threat Source: External
+Threat Agent: Human
+Threat Intention: Intentional
+Threat Motivation: Embarrassment of the society
+Threat Impact: Defacement of society website, changing of members
+images, possible identify theft of members.
+Threat Mitigation: Login validation, 2FA in place before member images
+can be changed, email updates to members whose images have been changed.
+-->
+
     <head>
         <title> HoI4 Society </title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -17,7 +30,7 @@
                 <li class=”active”><a href='event_calendar.html'> Events</a></li> 
                 <li class=”active”><a href='contact_us.html'> Contact Us</a></li>
                 <li class=”active”><a href='army.html'> Army</a></li>
-                <li class=”active”><a href='content.html'> Army</a></li>
+                <li class=”active”><a href='content.html'> Content</a></li>
                 <li class=”active”><a href='.html'> Army</a></li>
             </ul>     
         </nav>
@@ -26,56 +39,106 @@
             <div id="img-gallery" class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <img src="images/gallery1.jpg" class="gallery-img" alt="epic encirclement"/>
+                        <img id="img1"src="images/gallery1.jpg" class="gallery-img" onmouseover="highlight1()" onmouseout="delight1()" alt="epic encirclement"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/gallery2.jpg" class="gallery-img" alt="epic encirclement"/>
+                        <img id="img2"src="images/gallery2.jpg" class="gallery-img" onmouseover="highlight2()" onmouseout="delight2()" alt="epic encirclement"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/gallery23.jpg" class="gallery-img" alt="epic encirclement"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <img src="images/gallery4.png" class="gallery-img" alt="epic encirclement"/>
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/gallery5.jpg" class="gallery-img" alt="epic encirclement"/>
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/gallery6.jpg" class="gallery-img" alt="epic encirclement"/>
+                        <img id="img3" src="images/gallery23.jpg" class="gallery-img" onmouseover="highlight3()" onmouseout="delight3()" alt="epic encirclement"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <img id="img1" src="images/gallery7.jpg"  class="gallery-img" alt="epic encirclement"/>
+                        <img id="img4" src="images/gallery4.png" class="gallery-img" onmouseover="highlight4()" onmouseout="delight4()" alt="epic encirclement"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/gallery8.jpg" class="gallery-img" alt="epic encirclement"/>
+                        <img id="img5" src="images/gallery5.jpg" class="gallery-img" onmouseover="highlight5()" onmouseout="delight5()" alt="epic encirclement"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/gallery9.jpg" class="gallery-img" alt="epic encirclement"/>
+                        <img id="img6" src="images/gallery6.jpg" class="gallery-img" onmouseover="highlight6()" onmouseout="delight6()" alt="epic encirclement"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img id="img7" src="images/gallery7.jpg"  class="gallery-img" onmouseover="highlight7()" onmouseout="delight7()" alt="epic encirclement"/>
+                    </div>
+                    <div class="col-sm">
+                        <img id="img8" src="images/gallery8.jpg" class="gallery-img" onmouseover="highlight8()" onmouseout="delight8()" alt="epic encirclement"/>
+                    </div>
+                    <div class="col-sm">
+                        <img id="img9" src="images/gallery9.jpg" class="gallery-img" onmouseover="highlight9()" onmouseout="delight9()" alt="epic encirclement"/>
                     </div>
                 </div>
             </div>
         </main>
 
         <script>
-            document.getElementById("img1").addEventListener("mouseover", highlight);
-            document.getElementById("img1").addEventListener("mouseout", delight);
-            function highlight() {
-                document.getElementById("img1").style="border:solid black 10px;"
+            function highlight1() {
+                document.getElementById("img1").style="border:solid white 10px;"
             }
-            function delight() {
+            function delight1() {
                 document.getElementById("img1").style="border: none;"
+            }
+
+            function highlight2() {
+                document.getElementById("img2").style="border:solid white 10px;"
+            }
+            function delight2() {
+                document.getElementById("img2").style="border: none;"
+            }
+
+            function highlight3() {
+                document.getElementById("img3").style="border:solid white 10px;"
+            }
+            function delight3() {
+                document.getElementById("img3").style="border: none;"
+            }
+
+            function highlight4() {
+                document.getElementById("img4").style="border:solid white 10px;"
+            }
+            function delight4() {
+                document.getElementById("img4").style="border: none;"
+            }
+
+            function highlight5() {
+                document.getElementById("img5").style="border:solid white 10px;"
+            }
+            function delight5() {
+                document.getElementById("img5").style="border: none;"
+            }
+
+            function highlight6() {
+                document.getElementById("img6").style="border:solid white 10px;"
+            }
+            function delight6() {
+                document.getElementById("img6").style="border: none;"
+            }
+
+            function highlight7() {
+                document.getElementById("img7").style="border:solid white 10px;"
+            }
+            function delight7() {
+                document.getElementById("img7").style="border: none;"
+            }
+
+            function highlight8() {
+                document.getElementById("img8").style="border:solid white 10px;"
+            }
+            function delight8() {
+                document.getElementById("img8").style="border: none;"
+            }
+
+            function highlight9() {
+                document.getElementById("img9").style="border:solid white 10px;"
+            }
+            function delight9() {
+                document.getElementById("img9").style="border: none;"
             }
         </script>
 
-        <aside> </aside>
-
         <footer> <p> Copyright Cameron Jamieson 2023</p> </footer>
         
-        
-
     </body>
 </html>

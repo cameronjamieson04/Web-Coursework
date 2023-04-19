@@ -15,37 +15,39 @@
                 <li class=”active”><a href='event_calendar.html'> Events</a></li> 
                 <li class=”active”><a href='contact_us.html'> Contact Us</a></li>
                 <li class=”active”><a href='army.html'> Army</a></li>
-                <li class=”active”><a href='content.html'> Army</a></li>
+                <li class=”active”><a href='content.html'> Content</a></li>
                 <li class=”active”><a href='.html'> Army</a></li>
             </ul> 
         </nav>
 
         <main>
-        
-            <form>
-                <fieldset>
-                <legend>Contact Us using the form below and show us your encirclements.</legend>
-                <label for="name">Name:</label>
-                <input type="text" name="name" value=""/> <br/>
-                <label for="email">Email:</label>
-                <input type="text" name="email" value=""/> <br/>
-                <label for="memberStatus">Are you a member</label>
-                <label for="Yes">Yes</label>
-                <input type="radio" name="memberStatus" id="Yes" value="Yes">
-                <label for="No">No</label>
-                <input type="radio" name="memberStatus" id="no" value="No"> <br/>
-                <label for="comments">Any Comments:</label>
-                <input type="text" name="comments" value=""/> <br/>
-                <label for="files">Show us your encirclement:</label>
-                <input type="file" name="files"/> <br/>
-                <button type="button" id="button" onclick="myFunction()">Submit</button>
+            <div id="left-col">
+                <form>
+                    <fieldset>
+                    <legend>Contact Us using the form below and show us your encirclements.</legend>
+                    <label for="name">Name:</label>
+                        <input type="text" name="name" value=""/> <br/>
+                    <label for="email">Email:</label>
+                        <input type="text" name="email" value=""/> <br/>
+                    <label for="memberStatus">Are you a member</label>
+                        <label for="Yes">Yes</label>
+                            <input type="radio" name="memberStatus" id="Yes" value="Yes">
+                        <label for="No">No</label>
+                            <input type="radio" name="memberStatus" id="no" value="No"> <br/>
+                    <label for="comments">Any Comments:</label>
+                        <input type="text" name="comments" value=""/> <br/>
+                    <label for="files">Show us your encirclement:</label>
+                        <input type="file" name="files"/> <br/>
+                    <button type="button" id="button" onclick="myFunction()">Submit</button>
 
-                </fieldset>
-            </form>
-        
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="right-col">
+                <a id="tweet" class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/HOI_Game?ref_src=twsrc%5Etfw">Tweets by HOI_Game</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </main>
-
-        <aside> </aside>
 
         <footer> <p> Copyright Cameron Jamieson 2023</p> </footer>
         
